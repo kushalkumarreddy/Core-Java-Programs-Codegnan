@@ -2,7 +2,7 @@ package Loops;
 
 public class ArmstrongNum {
 	public static void main(String[] args) {
-		int n = 145;
+		int n = 123;
 		int sum = 0;
 		int temp = n;
 		while(n!=0) {
