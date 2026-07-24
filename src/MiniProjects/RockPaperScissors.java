@@ -5,6 +5,10 @@ import java.util.Scanner;
 
 public class RockPaperScissors {
 
+    static int playerWins = 0;
+    static int computerWins = 0;
+    static int ties = 0;
+
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
@@ -12,57 +16,97 @@ public class RockPaperScissors {
 
         while (true) {
 
-            System.out.println("\n --> ROCK PAPER SCISSORS <--");
-            System.out.println("1. Rock");
-            System.out.println("2. Paper");
-            System.out.println("3. Scissors");
-            System.out.println("4. Exit");
-            System.out.print("Enter Your Choice: ");
+            System.out.println("\n====== ROCK PAPER SCISSORS ======");
+            System.out.println("1. Play Game");
+            System.out.println("2. View Score");
+            System.out.println("3. Exit");
+            System.out.print("Enter your choice: ");
 
-            int userChoice = sc.nextInt();
+            int choice = sc.nextInt();
+            sc.nextLine(); 
 
-            if (userChoice == 4) {
-                System.out.println("Thanks for Playing!");
-                break;
-            }
+            switch (choice) {
 
-            if (userChoice < 1 || userChoice > 4) {
-                System.out.println("Invalid Choice! Try Again.");
-                continue;
-            }
+                case 1:
+                    playGame(sc, random);
+                    break;
 
-            int computerChoice = random.nextInt(3) + 1;
+                case 2:
+                    displayScore();
+                    break;
 
-            System.out.println("\nYou Chose      : " + getChoice(userChoice));
-            System.out.println("Computer Chose : " + getChoice(computerChoice));
+                case 3:
+                    System.out.println("\nThank you for playing!");
+                    displayScore();
+                    sc.close();
+                    return;
 
-            if (userChoice == computerChoice) {
-                System.out.println("Result : Match Draw!");
-            } 
-            else if ((userChoice == 1 && computerChoice == 3) ||
-                     (userChoice == 2 && computerChoice == 1) ||
-                     (userChoice == 3 && computerChoice == 2)) {
-                System.out.println("Result : You Win!");
-            } 
-            else {
-                System.out.println("Result : Computer Wins!");
+                default:
+                    System.out.println("Invalid Menu Choice!");
             }
         }
-
-        sc.close();
     }
 
-    public static String getChoice(int choice) {
+    public static void playGame(Scanner sc, Random random) {
+
+        char[] options = {'R', 'P', 'S'};
+
+        System.out.print("\nEnter R for Rock, P for Paper, S for Scissors: ");
+        char player = Character.toUpperCase(sc.next().charAt(0));
+
+        if (player != 'R' && player != 'P' && player != 'S') {
+            System.out.println("Invalid Choice! Please enter only R, P, or S.");
+            return;
+        }
+
+        char computer = options[random.nextInt(3)];
+
+        System.out.println("\nYour Choice     : " + getChoice(player));
+        System.out.println("Computer Choice : " + getChoice(computer));
+
+        if (player == computer) {
+            System.out.println("Result : It's a Tie!");
+            ties++;
+        }
+        else if ((player == 'R' && computer == 'S') ||
+                 (player == 'P' && computer == 'R') ||
+                 (player == 'S' && computer == 'P')) {
+
+            System.out.println("Result : You Win!");
+            playerWins++;
+        }
+        else {
+            System.out.println("Result : Computer Wins!");
+            computerWins++;
+        }
+
+        displayScore();
+    }
+
+    public static void displayScore() {
+
+        System.out.println("\n========== SCORE BOARD ==========");
+        System.out.println("Player Wins   : " + playerWins);
+        System.out.println("Computer Wins : " + computerWins);
+        System.out.println("Ties          : " + ties);
+        System.out.println("=================================");
+    }
+
+    public static String getChoice(char choice) {
 
         switch (choice) {
-            case 1:
+
+            case 'R':
                 return "Rock";
-            case 2:
+
+            case 'P':
                 return "Paper";
-            case 3:
+
+            case 'S':
                 return "Scissors";
+
             default:
-                return "";
+                return "Invalid";
         }
     }
 }
