@@ -1,3 +1,4 @@
+package TypeCasting;
 public class ItoC {
     public static void main(String[] args) {
         int a = 65;

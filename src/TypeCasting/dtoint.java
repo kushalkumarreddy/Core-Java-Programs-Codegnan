@@ -1,3 +1,4 @@
+package TypeCasting;
 public class dtoint {
     public static void main(String[] args) {
         double d = 1.5;

@@ -1,3 +1,4 @@
+package TypeCasting;
 public class Add2Byte {
     public static void main(String[] args) {
         byte a = 5;

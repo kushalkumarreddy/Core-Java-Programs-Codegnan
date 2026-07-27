@@ -1,3 +1,4 @@
+package TypeCasting;
 public class itod {
     public static void main(String[] args) {
         int i = 5;
