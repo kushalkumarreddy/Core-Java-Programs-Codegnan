@@ -2,7 +2,7 @@ package Strings;
 
 import java.util.Scanner;
 
-public class Reverse {
+public class Palindrome {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		
@@ -15,6 +15,12 @@ public class Reverse {
 		}
 		
 		System.out.println(rev);
+		
+		if(s.equalsIgnoreCase(rev)) {
+			System.out.println("Palindrome");
+		} else {
+			System.out.println("Not Palndrome");
+		}
 		
 		sc.close();
 		
