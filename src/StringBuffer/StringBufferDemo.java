@@ -3,27 +3,27 @@ package StringBuffer;
 public class StringBufferDemo {
 	public static void main(String[] args) {
 		
-//		StringBuffer sb = new StringBuffer(); //empty string
-//		System.out.println(sb); //prints empty string
-//		
-//		//append
-//		sb.append("Java");
-//		System.out.println(sb);
+		StringBuffer sb = new StringBuffer(); //empty string
+		System.out.println(sb); //prints empty string
 		
-//		sb.append("Developer");
-//		System.out.println(sb);
-//		
-//		//reverse
-//		System.out.println(sb.reverse());
-//		
-//		//length
-//		System.out.println(sb.length());
+		//append
+		sb.append("Java");
+		System.out.println(sb);
 		
-//		//insert
-//		System.out.println(sb.insert(0, "core"));
+		sb.append("Developer");
+		System.out.println(sb);
+		
+		//reverse
+		System.out.println(sb.reverse());
+		
+		//length
+		System.out.println(sb.length());
+		
+		//insert
+		System.out.println(sb.insert(0, "core"));
 		
 		//capacity
-//		System.out.println(sb.capacity());
+		System.out.println(sb.capacity());
 		
 		StringBuffer sb1 = new StringBuffer();
 		
@@ -39,11 +39,12 @@ public class StringBufferDemo {
 		System.out.println(sb1);
 		System.out.println(sb1.delete(2, 5)); //cojava
 		
+		//setCharAt()
+		sb1.setCharAt(1, 'K');
+		System.out.println(sb1);
 		
 		
 		
-		
-	
 	}
 
 }
