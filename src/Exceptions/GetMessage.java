@@ -8,7 +8,7 @@ public class GetMessage {
 		try {
 		res = num/div;
 		} catch (Exception e) {
-			e.getMessage();
+			System.out.println(e.getMessage());
 			e.printStackTrace();
 		}
 		
