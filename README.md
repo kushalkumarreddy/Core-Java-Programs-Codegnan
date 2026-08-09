@@ -1,82 +1,115 @@
-# Core Java Programs - Codegnan ☕
+# Core Java Programs
 
+A structured collection of Core Java programs, coding exercises, and practice problems developed during my Java training at Codegnan.
 
-A collection of **Core Java programs and practice exercises** completed during my Java training at **Codegnan**.
-
-This repository contains programs covering Java fundamentals, Object-Oriented Programming, exception handling, strings, arrays, patterns, threads, interfaces, packages, recursion, and other important Core Java concepts.
-
----
-
-## 📚 Topics Covered
-
-The repository currently includes programs related to:
-
-- 🔹 Java Basics
-- 🔹 Variables & Data Types
-- 🔹 Operators
-- 🔹 Conditional Statements
-- 🔹 Loops
-- 🔹 Arrays
-- 🔹 Strings
-- 🔹 StringBuffer
-- 🔹 Methods
-- 🔹 Constructors
-- 🔹 Access Modifiers
-- 🔹 Type Casting
-- 🔹 Packages
-- 🔹 Interfaces
-- 🔹 Object-Oriented Programming
-- 🔹 OOP Principles
-- 🔹 Exception Handling
-- 🔹 Custom Exceptions
-- 🔹 Threads
-- 🔹 Recursion
-- 🔹 Pattern Programs
-- 🔹 Numerical Patterns
-- 🔹 Star Patterns
-- 🔹 Alphabet Patterns
-- 🔹 Scanner Programs
-- 🔹 Random Class
-- 🔹 Mini Projects
-- 🔹 Practice Sessions
+This repository documents my learning and hands-on practice with Java fundamentals, Object-Oriented Programming, exception handling, multithreading, strings, arrays, patterns, packages, and other core programming concepts.
 
 ---
 
-## 📂 Repository Structure
+## About
+
+This repository is maintained as a practical reference for learning and strengthening Core Java concepts through implementation.
+
+The programs are organized topic-wise to make it easy to understand, practice, and revisit individual concepts.
+
+---
+
+## Topics Covered
+
+### Java Fundamentals
+- Variables
+- Data Types
+- Operators
+- Conditional Statements
+- Loops
+- Methods
+- Type Casting
+- Scanner
+- Random
+
+### Arrays
+- One-Dimensional Arrays
+- Multi-Dimensional Arrays
+- Array Operations
+- Array-Based Problems
+
+### Strings
+- String Manipulation
+- String Methods
+- Character Operations
+- String Comparison
+- StringBuffer
+
+### Object-Oriented Programming
+- Classes and Objects
+- Constructors
+- Encapsulation
+- Inheritance
+- Polymorphism
+- Abstraction
+- Interfaces
+- Access Modifiers
+
+### Exception Handling
+- Exception Handling
+- try-catch
+- finally
+- throw
+- throws
+- Custom Exceptions
+
+### Advanced Core Java
+- Packages
+- Recursion
+- Multithreading
+- Interfaces
+- Type Casting
+
+### Problem Solving
+- Star Patterns
+- Number Patterns
+- Alphabet Patterns
+- Numerical Patterns
+- Practice Problems
+- Mini Projects
+
+---
+
+## Project Structure
 
 ```text
-Core-Java-Programs-Codegnan
+Core-Java-Programs-Codegnan/
 │
-├── src
-│   ├── AccessModifiers
-│   ├── AlphabetPattern
-│   ├── Arrays
-│   ├── Constructor
-│   ├── CustomExceptions
-│   ├── Demo
-│   ├── Exceptions
-│   ├── If
-│   ├── Interface
-│   ├── JustTrying
-│   ├── Loops
-│   ├── Methods
-│   ├── MiniProjects
-│   ├── NumericalPattern
-│   ├── OOPS
-│   ├── OopsPrinciples
-│   ├── Operators
-│   ├── Packages
-│   ├── Patterns
-│   ├── PracticeSession
-│   ├── Random
-│   ├── Recursion
-│   ├── Scanner
-│   ├── StarPattern
-│   ├── StringBuffer
-│   ├── Strings
-│   ├── Threads
-│   ├── TypeCasting
-│   ├── mypack1
-│   └── mypack2
+├── src/
+│   ├── AccessModifiers/
+│   ├── AlphabetPattern/
+│   ├── Arrays/
+│   ├── Constructor/
+│   ├── CustomExceptions/
+│   ├── Demo/
+│   ├── Exceptions/
+│   ├── If/
+│   ├── Interface/
+│   ├── JustTrying/
+│   ├── Loops/
+│   ├── Methods/
+│   ├── MiniProjects/
+│   ├── NumericalPattern/
+│   ├── OOPS/
+│   ├── OopsPrinciples/
+│   ├── Operators/
+│   ├── Packages/
+│   ├── Patterns/
+│   ├── PracticeSession/
+│   ├── Random/
+│   ├── Recursion/
+│   ├── Scanner/
+│   ├── StarPattern/
+│   ├── StringBuffer/
+│   ├── Strings/
+│   ├── Threads/
+│   ├── TypeCasting/
+│   ├── mypack1/
+│   └── mypack2/
 │
 └── README.md
