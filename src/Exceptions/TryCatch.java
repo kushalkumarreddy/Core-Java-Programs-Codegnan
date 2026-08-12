@@ -12,7 +12,7 @@ public class TryCatch {
 		}
 		
 		System.out.println(res);
-		System.out.println("Bye");
+		
 	}
 
 }
