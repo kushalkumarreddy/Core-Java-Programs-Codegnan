@@ -1,6 +1,7 @@
 package list;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 
 public class ArrayListDemo {
@@ -26,7 +27,15 @@ public class ArrayListDemo {
             System.out.println(s);
         }
         
-//        System.out.println("Using Iterator");
-//        Iterator<String> 
+        System.out.println("Using Iterator................");
+        Iterator<String>  it = al.iterator();
+        
+        while(it.hasNext()) {
+        	String name = it.next();        	
+        	if(name.length()==4) {
+        		it.remove();
+        	}
+        }
+        System.out.println(al);
     }
 }
