@@ -12,17 +12,14 @@ public class ListIteratorDemo {
         al.add("sarayu");
         al.add("arjun");
         al.add("bharath");
-        al.add("unknown");
-        al.add("nikhil");
-        al.add("krish");
 
         System.out.println(al);
         
-        ListIterator<String> it = al.listIterator();
+        ListIterator<String> it = al.listIterator(al.size());
         while(it.hasPrevious()) {
-        	System.out.println(it.hasPrevious());
+        	System.out.println(it.previous());
+        	
         	}
-        }
 	}
 
 }
