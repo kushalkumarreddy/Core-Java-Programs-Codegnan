@@ -1,6 +1,6 @@
 package set;
 
-public class Student {
+public class Student implements Comparable<Student> {
 	int id;
 	String name;
 	int age;
@@ -13,8 +13,12 @@ public class Student {
 
 	@Override
 	public String toString() {
-		return "Sid=" + id + ", name=" + name + ", age=" + age;
+		return "id=" + id + ", name=" + name + ", age=" + age;
 	}
 	
+	@Override
+    public int compareTo(Student s) {
+        return this.id - s.id;
+    }
 
 }
