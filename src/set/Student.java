@@ -1,5 +1,36 @@
 package set;
 
+//HashSet Custom Student code
+//public class Student {
+//
+//int id;
+//
+//String name;
+//
+//int age;
+//
+//public Student(int id, String name,int age) {
+//
+//this.id = id;
+//
+//this.name = name;
+//
+//this.age = age;
+//
+//}
+//
+//@Override
+//
+//public String toString() {
+//
+//return "Sid=" + id + ", name=" + name + ", age=" + age;
+//
+//}
+//
+//}
+
+
+//TreeSet Custom student code
 public class Student implements Comparable<Student> {
 	int id;
 	String name;
