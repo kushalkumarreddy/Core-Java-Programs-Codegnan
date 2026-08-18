@@ -28,7 +28,7 @@ public class EmployeeCRUD {
 			System.out.println(e);
 		}
 		
-		System.out.println("\nDelete\n");
+		System.out.println("\nDeleted Employee id 456\n");
 		
 		for(int i=0;i<emp.size();i++) {
 			if(emp.get(i).id == 456) {
