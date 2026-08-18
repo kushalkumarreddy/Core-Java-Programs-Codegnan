@@ -10,9 +10,21 @@ public class HashSetMethods {
 		set.add(20);
 		set.add(30);
 		set.add(40);
+		set.add(null);
 		
 		System.out.println(set);
 		
+		Set<Integer> set1 = new HashSet<>();
+		set1.add(10);
+		set1.add(20);
+		set1.add(40);
+		
+		System.out.println(set1);
+		
+		System.out.println(set.containsAll(set1));
+		
+		set.removeAll(set1);
+		System.out.println(set);
 		
 	}
 
