@@ -2,7 +2,7 @@ package map;
 
 import java.util.HashMap;
 
-public class HashMapMethods {
+public class MapMethods {
 public static void main(String[] args) {
 		
 		HashMap<Integer, String> hmap = new HashMap<>();
@@ -10,6 +10,9 @@ public static void main(String[] args) {
 		hmap.put(101, "rakesh");
 		hmap.put(102, "ramesh");
 		hmap.put(103, "ganesh");
+		hmap.put(104, "somesh");
+		hmap.put(null, null);
+		hmap.put(null, null); //replace old value
 		hmap.put(102, "suresh"); //replaces old value
 		System.out.println(hmap);
 		
@@ -26,7 +29,12 @@ public static void main(String[] args) {
 		System.out.println(hmap.values());
 		System.out.println(hmap.keySet());
 		
-		System.out.println(hmap.get(100));
+		System.out.println(hmap.get(101));
+		System.out.println(hmap.containsKey(100));
+		System.out.println(hmap.containsValue("ganesh"));
+		System.out.println(hmap.size());
+		
+		
 		
 	}
 
