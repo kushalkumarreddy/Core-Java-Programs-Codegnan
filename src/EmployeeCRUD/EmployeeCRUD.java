@@ -8,10 +8,13 @@ public class EmployeeCRUD {
 		List<Employee> emp = new ArrayList<>();
 		
 		emp.add(new Employee(101,"kushal",300000,"IT"));
-		emp.add(new Employee(456,"karthik",200000,"CSE"));
+		emp.add(new Employee(456,"arjun",200000,"CSE"));
+		emp.add(new Employee(222,"karthik",250000,"Finance"));
 		
 		System.out.println("Created Employee data list\n");
-		System.out.println("Read Employee Details\n");		
+		System.out.println("Read Employee Details\n");	
+		
+		
 		for(Employee e : emp) {
 			System.out.println(e);
 		}
