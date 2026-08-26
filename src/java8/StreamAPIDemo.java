@@ -2,6 +2,7 @@ package java8;
 
 import java.util.Arrays;
 import java.util.List;
+import java.util.Optional;
 
 public class StreamAPIDemo {
 	public static void main(String[] args) {
@@ -15,11 +16,36 @@ public class StreamAPIDemo {
 //		.sorted()
 //		.forEach(System.out::println);
 		
-		long count = list.stream()
-				.filter(n -> n>10)
-				.count();
+//		long count = list.stream()
+//				.filter(n -> n>10)
+//				.count();
+//		
+//		System.out.println(count);
+//		.max((a,b) -> Integer.Compare(a,b));
 		
-		System.out.println(count);
+//		Optional<Integer> max = list.stream()
+//		.max(Integer :: compare);
+		
+//		int max = list.stream()
+//				.filter(n -> n<30)
+//				.reduce(0,(a,b)->a+b);
+		
+//		System.out.println(max.get());
+		
+//		boolean val = list.stream()
+//		.allMatch(n -> n>=5);
+//		.anyMatch(n -> n>=5);
+//		System.out.println(val);
+		
+//		.skip(2)
+//		.forEach(System.out::println);
+		
+//		.limit(2)
+//		.forEach(System.out::println);
+		
+//		Optional<Integer> first = list.stream()
+//		.findFirst();
+//		System.out.println(first);
 		
 	}
 
