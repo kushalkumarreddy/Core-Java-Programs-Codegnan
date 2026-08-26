@@ -8,7 +8,9 @@ public class FIleWrite {
 	public static void main(String[] args) {
 		
 		try {
-			FileOutputStream fos = new FileOutputStream("std.txt");
+			
+//			FileOutputStream fos = new FileOutputStream("std.txt"); //file overwrite
+			FileOutputStream fos = new FileOutputStream("std.txt",true); //write new data without overwriting
 			String msg = "I'm entering into the file using output stream";
 			fos.write(msg.getBytes()); //converts string into byte
 			
@@ -17,6 +19,6 @@ public class FIleWrite {
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
+		
 	}
-
 }
