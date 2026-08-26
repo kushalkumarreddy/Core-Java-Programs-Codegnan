@@ -1,4 +1,4 @@
-package jfs56.patterens;
+package Patterns;
 
 public class UpperSTri {
 

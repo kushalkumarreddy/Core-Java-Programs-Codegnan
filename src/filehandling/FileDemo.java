@@ -16,6 +16,9 @@ public class FileDemo {
 		} catch(IOException e) {
 			e.printStackTrace();
 		}
+		
+		System.out.println(file.getAbsolutePath());
+		
 	}
 
 }

@@ -1,4 +1,4 @@
-package jfs56.numarical;
+package Patterns;
 
 
 /*1 
